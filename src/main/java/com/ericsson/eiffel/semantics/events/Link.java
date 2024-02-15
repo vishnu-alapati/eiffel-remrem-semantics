@@ -15,9 +15,11 @@
 
 package com.ericsson.eiffel.semantics.events;
 
+import javax.annotation.processing.Generated;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+@Generated("jsonschema2pojo")
 public class Link {
 
     /**
@@ -36,6 +38,9 @@ public class Link {
     @SerializedName("target")
     @Expose
     private String target;
+    @SerializedName("domainId")
+    @Expose
+    private String domainId;
 
     /**
      * 
@@ -71,6 +76,14 @@ public class Link {
      */
     public void setTarget(String target) {
         this.target = target;
+    }
+
+    public String getDomainId() {
+        return domainId;
+    }
+
+    public void setDomainId(String domainId) {
+        this.domainId = domainId;
     }
 
 }

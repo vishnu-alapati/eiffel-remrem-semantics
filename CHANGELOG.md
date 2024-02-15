@@ -1,3 +1,11 @@
+## 2.4.0
+- Switched to Orizaba
+
+## 2.3.1
+- Switched to Arica. 
+  A new property ``.meta.schemaUri`` has been added to meta-object.
+  The fact caused that VERSIONS OF ALL EVENTS WERE STEPPED UP.
+
 ## 2.3.0
 - Sepia protocol routing key template adapted
 

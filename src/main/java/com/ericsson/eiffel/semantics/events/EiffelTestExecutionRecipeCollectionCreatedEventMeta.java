@@ -19,9 +19,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import javax.annotation.processing.Generated;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+@Generated("jsonschema2pojo")
 public class EiffelTestExecutionRecipeCollectionCreatedEventMeta implements Meta
 {
 
@@ -48,7 +50,7 @@ public class EiffelTestExecutionRecipeCollectionCreatedEventMeta implements Meta
      */
     @SerializedName("version")
     @Expose
-    private EiffelTestExecutionRecipeCollectionCreatedEventMeta.Version version = EiffelTestExecutionRecipeCollectionCreatedEventMeta.Version.fromValue("4.0.0");
+    private EiffelTestExecutionRecipeCollectionCreatedEventMeta.Version version = EiffelTestExecutionRecipeCollectionCreatedEventMeta.Version.fromValue("4.3.0");
     /**
      * 
      * (Required)
@@ -66,6 +68,9 @@ public class EiffelTestExecutionRecipeCollectionCreatedEventMeta implements Meta
     @SerializedName("security")
     @Expose
     private Security security;
+    @SerializedName("schemaUri")
+    @Expose
+    private String schemaUri;
 
     /**
      * 
@@ -163,6 +168,15 @@ public class EiffelTestExecutionRecipeCollectionCreatedEventMeta implements Meta
         this.security = security;
     }
 
+    public String getSchemaUri() {
+        return schemaUri;
+    }
+
+    public void setSchemaUri(String schemaUri) {
+        this.schemaUri = schemaUri;
+    }
+
+    @Generated("jsonschema2pojo")
     public enum Type {
 
         @SerializedName("EiffelTestExecutionRecipeCollectionCreatedEvent")
@@ -176,7 +190,7 @@ public class EiffelTestExecutionRecipeCollectionCreatedEventMeta implements Meta
             }
         }
 
-        private Type(String value) {
+        Type(String value) {
             this.value = value;
         }
 
@@ -200,10 +214,11 @@ public class EiffelTestExecutionRecipeCollectionCreatedEventMeta implements Meta
 
     }
 
+    @Generated("jsonschema2pojo")
     public enum Version {
 
-        @SerializedName("4.0.0")
-        _4_0_0("4.0.0");
+        @SerializedName("4.3.0")
+        _4_3_0("4.3.0");
         private final String value;
         private final static Map<String, EiffelTestExecutionRecipeCollectionCreatedEventMeta.Version> CONSTANTS = new HashMap<String, EiffelTestExecutionRecipeCollectionCreatedEventMeta.Version>();
 
@@ -213,7 +228,7 @@ public class EiffelTestExecutionRecipeCollectionCreatedEventMeta implements Meta
             }
         }
 
-        private Version(String value) {
+        Version(String value) {
             this.value = value;
         }
 
